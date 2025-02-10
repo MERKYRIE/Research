@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="_Input\_\Research.hxx" />
+    <ClInclude Include="_Input\_\Research\Audio.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Debug.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Interface.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Keyboard.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Time.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Audio\Sound.hxx">
+      <Filter>Research\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Audio\Track.hxx">
+      <Filter>Research\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Keyboard\Key.hxx">
+      <Filter>Research\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Absolute.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Button.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Cursor.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Pixel.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Rectangle.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Relative.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Square.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Mouse\Wheel.hxx">
+      <Filter>Research\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video\Font.hxx">
+      <Filter>Research\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video\Image.hxx">
+      <Filter>Research\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space\Entity.hxx">
+      <Filter>Research\Space</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space\Partition.hxx">
+      <Filter>Research\Space</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space\Terrain.hxx">
+      <Filter>Research\Space</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space\Image.hxx">
+      <Filter>Research\Space</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_Input\_\Research.cxx" />
+    <ClCompile Include="_Input\_\Research\Audio.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Debug.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Interface.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Keyboard.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Time.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Video.cxx">
+      <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Audio\Sound.cxx">
+      <Filter>Research\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Audio\Track.cxx">
+      <Filter>Research\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Keyboard\Key.cxx">
+      <Filter>Research\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Absolute.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Button.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Cursor.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Pixel.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Rectangle.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Relative.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Square.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Mouse\Wheel.cxx">
+      <Filter>Research\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Video\Font.cxx">
+      <Filter>Research\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Video\Image.cxx">
+      <Filter>Research\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space\Entity.cxx">
+      <Filter>Research\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space\Partition.cxx">
+      <Filter>Research\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space\Terrain.cxx">
+      <Filter>Research\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space\Image.cxx">
+      <Filter>Research\Space</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Research">
+      <UniqueIdentifier>{eb6a0017-5670-4b3c-b279-e256312b3432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Audio">
+      <UniqueIdentifier>{dba07004-3d17-423d-ab6e-62d11fbe19c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Keyboard">
+      <UniqueIdentifier>{b7120813-8078-46a6-8b66-f16c7d594424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Mouse">
+      <UniqueIdentifier>{1a77593a-52c2-477e-94d7-5cdde148c25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Space">
+      <UniqueIdentifier>{4fd239f3-5e0d-4906-9b17-08e8443c4c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Video">
+      <UniqueIdentifier>{778f9d13-802e-4eaf-9d7b-15dae4b1fb45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
