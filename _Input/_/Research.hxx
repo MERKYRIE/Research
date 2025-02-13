@@ -58,7 +58,21 @@ namespace NResearch
             struct SPartition;
         }
 
+        namespace NSpace2
+        {
+            struct SEntity;
+            struct SGround;
+            struct SImage;
+            struct SPartition;
+        }
+
         namespace NVideo1
+        {
+            struct SFont;
+            struct SImage;
+        }
+
+        namespace NVideo2
         {
             struct SFont;
             struct SImage;
@@ -79,12 +93,20 @@ namespace NResearch
 #include"Research/Space1/Ground.hxx"
 #include"Research/Space1/Image.hxx"
 #include"Research/Space1/Partition.hxx"
+#include"Research/Space2/Entity.hxx"
+#include"Research/Space2/Ground.hxx"
+#include"Research/Space2/Image.hxx"
+#include"Research/Space2/Partition.hxx"
 #include"Research/Video1/Font.hxx"
 #include"Research/Video1/Image.hxx"
+#include"Research/Video2/Font.hxx"
+#include"Research/Video2/Image.hxx"
 
 #include"Research/Debug.hxx"
 #include"Research/Keyboard.hxx"
 #include"Research/Mouse.hxx"
 #include"Research/Time.hxx"
 #include"Research/Video1.hxx"
+#include"Research/Video2.hxx"
 #include"Research/Space1.hxx"
+#include"Research/Space2.hxx"

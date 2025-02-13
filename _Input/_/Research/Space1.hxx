@@ -4,7 +4,7 @@ namespace NResearch::NResearch
 {
     //Naive tilemap implementation
 
-    inline struct SSpace1
+    struct SSpace1
     {
         //Configures viewport's mouse dragging speed
 
@@ -42,6 +42,5 @@ namespace NResearch::NResearch
         //Updates viewport and all partitions
 
         void IUpdate();
-    }
-    GSpace;
+    };
 }
