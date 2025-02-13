@@ -2,23 +2,48 @@
 
 namespace NResearch::NResearch
 {
-    inline struct SVideo
+    //Naive video implementation
+
+    inline struct SVideo1
     {
+        //Contains SDL-based functionalities for drawing
+        
         SDL_Window* FWindow;
         SDL_Renderer* FRenderer;
+
+        //Contains currently using window demensions
+
         double FWidth;
         double FHeight;
+
+        //Contains window demensions respective limits
+
         double FMinimum;
         double FMaximum;
+
+        //Contains window ratios for adjusting
+
         double FRatio;
         double FRatioInversed;
-        std::unordered_map<std::string , std::shared_ptr<NVideo::SFont>> FFonts;
-        std::unordered_map<std::string , NVideo::SImage> FImages;
 
-        SVideo();
+        //Contains all the fonts loaded
+
+        std::unordered_map<std::string , std::shared_ptr<NVideo1::SFont>> FFonts;
+
+        //Configures window, renderer and fonts
+
+        SVideo1();
+
+        //Clear and updates the window
+
         void IUpdate();
-        NVideo::SFont* IFont(std::string const& APath);
-        NVideo::SImage& IImage(std::string const& APath);
+
+        //Returns a font by name
+
+        NVideo1::SFont* IFont(std::string const& APath);
+
+        //Converts different kinds of coordinates
+
         double IPixelToRectangleHorizontal(double const& APixel);
         double IPixelToRectangleVertical(double const& APixel);
         double IPixelToSquare(double const& APixel);
@@ -29,7 +54,10 @@ namespace NResearch::NResearch
         double ISquareToPixel(double const& ASquare);
         double ISquareToRectangleHorizontal(double const& ASquare);
         double ISquareToRectangleVertical(double const& ASquare);
-        ~SVideo();
+
+        //Terminates SDL-based functionalities for drawing 
+
+        ~SVideo1();
     }
     GVideo;
 }

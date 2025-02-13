@@ -1,6 +1,6 @@
 #include"Research.hxx"
 
-namespace NResearch::NResearch::NVideo
+namespace NResearch::NResearch::NVideo1
 {
     SFont::SFont(std::string const& APath)
     {
@@ -8,17 +8,17 @@ namespace NResearch::NResearch::NVideo
         GDebug.IHandle(LFont);
         for(char LDigit{'0'} ; LDigit <= '9' ; LDigit++)
         {
-            FDigits.emplace_back(std::make_shared<NVideo::SImage>(LFont , std::string{LDigit}));
+            FDigits.emplace_back(std::make_shared<NVideo1::SImage>(LFont , std::string{LDigit}));
         }
         FDigits.shrink_to_fit();
         for(char LUppercase{'A'} ; LUppercase <= 'Z' ; LUppercase++)
         {
-            FUppercases.emplace_back(std::make_shared<NVideo::SImage>(LFont , std::string{LUppercase}));
+            FUppercases.emplace_back(std::make_shared<NVideo1::SImage>(LFont , std::string{LUppercase}));
         }
         FUppercases.shrink_to_fit();
         for(char LLowercase{'a'} ; LLowercase <= 'z' ; LLowercase++)
         {
-            FLowercases.emplace_back(std::make_shared<NVideo::SImage>(LFont , std::string{LLowercase}));
+            FLowercases.emplace_back(std::make_shared<NVideo1::SImage>(LFont , std::string{LLowercase}));
         }
         FLowercases.shrink_to_fit();
         for(const std::filesystem::directory_entry& LEntry : std::filesystem::recursive_directory_iterator{"Strings"})

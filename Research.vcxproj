@@ -20,11 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_Input\_\Research.hxx" />
-    <ClInclude Include="_Input\_\Research\Audio.hxx" />
-    <ClInclude Include="_Input\_\Research\Audio\Sound.hxx" />
-    <ClInclude Include="_Input\_\Research\Audio\Track.hxx" />
     <ClInclude Include="_Input\_\Research\Debug.hxx" />
-    <ClInclude Include="_Input\_\Research\Interface.hxx" />
     <ClInclude Include="_Input\_\Research\Keyboard.hxx" />
     <ClInclude Include="_Input\_\Research\Keyboard\Key.hxx" />
     <ClInclude Include="_Input\_\Research\Mouse.hxx" />
@@ -36,23 +32,19 @@
     <ClInclude Include="_Input\_\Research\Mouse\Relative.hxx" />
     <ClInclude Include="_Input\_\Research\Mouse\Square.hxx" />
     <ClInclude Include="_Input\_\Research\Mouse\Wheel.hxx" />
-    <ClInclude Include="_Input\_\Research\Space.hxx" />
-    <ClInclude Include="_Input\_\Research\Space\Entity.hxx" />
-    <ClInclude Include="_Input\_\Research\Space\Image.hxx" />
-    <ClInclude Include="_Input\_\Research\Space\Partition.hxx" />
-    <ClInclude Include="_Input\_\Research\Space\Terrain.hxx" />
+    <ClInclude Include="_Input\_\Research\Space1.hxx" />
+    <ClInclude Include="_Input\_\Research\Space1\Entity.hxx" />
+    <ClInclude Include="_Input\_\Research\Space1\Ground.hxx" />
+    <ClInclude Include="_Input\_\Research\Space1\Image.hxx" />
+    <ClInclude Include="_Input\_\Research\Space1\Partition.hxx" />
     <ClInclude Include="_Input\_\Research\Time.hxx" />
-    <ClInclude Include="_Input\_\Research\Video.hxx" />
-    <ClInclude Include="_Input\_\Research\Video\Font.hxx" />
-    <ClInclude Include="_Input\_\Research\Video\Image.hxx" />
+    <ClInclude Include="_Input\_\Research\Video1.hxx" />
+    <ClInclude Include="_Input\_\Research\Video1\Font.hxx" />
+    <ClInclude Include="_Input\_\Research\Video1\Image.hxx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Input\_\Research.cxx" />
-    <ClCompile Include="_Input\_\Research\Audio.cxx" />
-    <ClCompile Include="_Input\_\Research\Audio\Sound.cxx" />
-    <ClCompile Include="_Input\_\Research\Audio\Track.cxx" />
     <ClCompile Include="_Input\_\Research\Debug.cxx" />
-    <ClCompile Include="_Input\_\Research\Interface.cxx" />
     <ClCompile Include="_Input\_\Research\Keyboard.cxx" />
     <ClCompile Include="_Input\_\Research\Keyboard\Key.cxx" />
     <ClCompile Include="_Input\_\Research\Mouse.cxx" />
@@ -64,15 +56,15 @@
     <ClCompile Include="_Input\_\Research\Mouse\Relative.cxx" />
     <ClCompile Include="_Input\_\Research\Mouse\Square.cxx" />
     <ClCompile Include="_Input\_\Research\Mouse\Wheel.cxx" />
-    <ClCompile Include="_Input\_\Research\Space.cxx" />
-    <ClCompile Include="_Input\_\Research\Space\Entity.cxx" />
-    <ClCompile Include="_Input\_\Research\Space\Image.cxx" />
-    <ClCompile Include="_Input\_\Research\Space\Partition.cxx" />
-    <ClCompile Include="_Input\_\Research\Space\Terrain.cxx" />
+    <ClCompile Include="_Input\_\Research\Space1.cxx" />
+    <ClCompile Include="_Input\_\Research\Space1\Entity.cxx" />
+    <ClCompile Include="_Input\_\Research\Space1\Ground.cxx" />
+    <ClCompile Include="_Input\_\Research\Space1\Image.cxx" />
+    <ClCompile Include="_Input\_\Research\Space1\Partition.cxx" />
     <ClCompile Include="_Input\_\Research\Time.cxx" />
-    <ClCompile Include="_Input\_\Research\Video.cxx" />
-    <ClCompile Include="_Input\_\Research\Video\Font.cxx" />
-    <ClCompile Include="_Input\_\Research\Video\Image.cxx" />
+    <ClCompile Include="_Input\_\Research\Video1.cxx" />
+    <ClCompile Include="_Input\_\Research\Video1\Font.cxx" />
+    <ClCompile Include="_Input\_\Research\Video1\Image.cxx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

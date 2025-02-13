@@ -1,13 +1,7 @@
 #include"Research.hxx"
 
-namespace NResearch::NResearch::NVideo
+namespace NResearch::NResearch::NVideo1
 {
-    SImage::SImage(std::string const& APath)
-    {
-        FHandle = IMG_LoadTexture(GVideo.FRenderer , APath.c_str());
-        GDebug.IHandle(FHandle);
-    }
-
     SImage::SImage(TTF_Font* const& AFont , std::string const& AString)
     {
         SDL_Surface* LSurface{TTF_RenderUTF8_LCD_Wrapped(AFont , (std::string{} + "\n" + " " + AString + " " + "\n").c_str() , SDL_Color{.r{100} , .g{100} , .b{100} , .a{SDL_ALPHA_OPAQUE}} , SDL_Color{.r{0} , .g{0} , .b{0} , .a{SDL_ALPHA_OPAQUE}} , 0)};
@@ -21,14 +15,14 @@ namespace NResearch::NResearch::NVideo
     {
         std::int32_t LWidth;
         SDL_QueryTexture(FHandle , nullptr , nullptr , &LWidth , nullptr);
-        return LWidth;
+        return(LWidth);
     }
 
     double SImage::IHeight()
     {
         std::int32_t LHeight;
         SDL_QueryTexture(FHandle , nullptr , nullptr , nullptr , &LHeight);
-        return LHeight;
+        return(LHeight);
     }
 
     double SImage::IMinimum()
@@ -45,11 +39,6 @@ namespace NResearch::NResearch::NVideo
         std::int32_t LHeight;
         SDL_QueryTexture(FHandle , nullptr , nullptr , &LWidth , &LHeight);
         return(std::max(LWidth , LHeight));
-    }
-
-    void SImage::IDraw(SDL_Rect const& ASource , SDL_Rect const& ADestination)
-    {
-        SDL_RenderCopy(GVideo.FRenderer , FHandle , &ASource , &ADestination);
     }
 
     SImage::~SImage()

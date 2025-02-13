@@ -1,7 +1,5 @@
 #pragma comment(lib , "../SimpleDirectMediaLayer/SDL2main")
 #pragma comment(lib , "../SimpleDirectMediaLayer/SDL2")
-#pragma comment(lib , "../SimpleDirectMediaLayer/Image/SDL2_image")
-#pragma comment(lib , "../SimpleDirectMediaLayer/Mixer/SDL2_mixer")
 #pragma comment(lib , "../SimpleDirectMediaLayer/TrueTypeFont/SDL2_ttf")
 
 #include"Research.hxx"

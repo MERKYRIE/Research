@@ -1,6 +1,6 @@
 #include"Research.hxx"
 
-namespace NResearch::NResearch::NSpace
+namespace NResearch::NResearch::NSpace1
 {
     SImage::SImage()
     {
@@ -9,7 +9,7 @@ namespace NResearch::NResearch::NSpace
         FDestination = {};
     }
 
-    void SImage::ILoad(NVideo::SImage* const& AImage)
+    void SImage::ILoad(NVideo1::SImage* const& AImage)
     {
         FImage = AImage;
         FSource = {0 , 0 , static_cast<std::int32_t>(std::round(FImage->IWidth())) , static_cast<std::int32_t>(std::round(FImage->IHeight()))};

@@ -1,16 +1,34 @@
 #pragma once
 
-namespace NResearch::NResearch::NSpace
+namespace NResearch::NResearch::NSpace1
 {
+    //Naive image implementation
+    
     struct SImage
     {
-        NVideo::SImage* FImage;
+        //Contains image as loadable resource
+        
+        NVideo1::SImage* FImage;
+
+        //Contains area to copy from
+
         SDL_Rect FSource;
+
+        //Contains area to draw to
+
         SDL_Rect FDestination;
 
+        //Configures empty image and areas
+
         SImage();
-        void ILoad(NVideo::SImage* const& AImage);
+
+        //Configures image and adjusts areas
+
+        void ILoad(NVideo1::SImage* const& AImage);
         void IUnload();
+
+        //Configures source by different coordinates
+
         double ISourceX();
         double ISourceY();
         double ISourceWidth();
@@ -47,6 +65,9 @@ namespace NResearch::NResearch::NSpace
         void ISourceYSquareRelative(double const& AY);
         void ISourceWidthSquareRelative(double const& AWidth);
         void ISourceHeightSquareRelative(double const& AHeight);
+
+        //Configures destination by different coordinates
+
         double IDestinationX();
         double IDestinationY();
         double IDestinationWidth();
@@ -83,6 +104,9 @@ namespace NResearch::NResearch::NSpace
         void IDestinationYSquareRelative(double const& AY);
         void IDestinationWidthSquareRelative(double const& AWidth);
         void IDestinationHeightSquareRelative(double const& AHeight);
+
+        //Draws using image and areas
+
         void IDraw();
     };
 }
