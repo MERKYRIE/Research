@@ -6,8 +6,6 @@ Simulating worlds effectively in terms of memory and performance has been always
 
 The goal is to show how to optimize a tilemap (a two-dimensional level data structure).
 
-
-
 # State of the Art
 
 I have been searching a lot for any already existing information about the chosen subject.
@@ -15,8 +13,6 @@ I have been searching a lot for any already existing information about the chose
 Unfortunately, I've failed to find an exhaustive reference around this topic, only the plain ones.
 
 I'm still sure it's somewhere out there but I'm basing my research on flat grounds.
-
-
 
 # Approach
 
@@ -72,10 +68,32 @@ Note that this specific assembly instruction provides a much slower behavior tha
 
 The reason of it is that stack operations are computed in a slowed down way.
 
+That said, we conclude that the function parameters placed in registers have some performance gain.
 
+So it is more preferable to lay down under the ABI's register function parameters limitations.
+
+As we are targeting multiple platforms, we should follow the strictest ABI's limitations as possible.
+
+Here, Windows is providing the least number of function parameters (4 integer and 4 floating).
+
+Whilst Linux provides a little bit more both of them (6 integer and 8 floating).
+
+In our case we're using 2 integer and 4 floating 64-bits copying function parameters, so:
+
+1. The number of the function parameters (2 and 4) is not exceeding ABI's register limitations
+   
+2. The size of the function parameters (64) is speeding us up on a 64-bit architecture
+
+3. The qualifier of the function parameters (copying) is implying copy and use (without a pointer)
+
+4. The type of the function parameters (integer and floating) is not using an allocation pointer
+
+Like that, we haven't hit the worst case - pushing the function parameters on the stack.
+
+But nevertheless stack operations are actually taking place in such a case slowing all down.
+
+The fact that we're calling 3 functions with 6 parameters gives us 18 of them.
 
 # Analysis
-
-
 
 # Bibliography
