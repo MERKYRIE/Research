@@ -94,6 +94,16 @@ But nevertheless stack operations are actually taking place in such a case slowi
 
 The fact that we're calling 3 functions with 6 parameters gives us 18 of them.
 
+Each further executed function call is actually pushing the previous function parameters on the stack.
+
+And this executed function call is then popping the previous function parameters from the stack.
+
+Such a process can be illustrated on a step by step basis by the following:
+
+1. Space calls Partition - the Partition parameters are now placed in the registers
+
+2. Partition calls Ground - the Partition parameters are now pushed on the stack, the Ground parameters are now placed in the registers
+
 # Analysis
 
 # Bibliography
