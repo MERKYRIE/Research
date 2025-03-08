@@ -155,3 +155,13 @@ To convert all the parameters to the global variables.
 # Analysis
 
 # Bibliography
+
+https://link.springer.com/book/10.1007/978-1-4842-5076-1 - Netwide Assembly (NASM) and stand-alone assembly programming with it under Linux x64 and Windows x64
+
+https://link.springer.com/book/10.1007/978-1-4842-9603-5 - Microsoft Assembly (MASM) and Microsoft Visual C (MSVC) linked with assembly programming under Windows x64
+
+https://en.wikipedia.org/wiki/Template:Program_execution - general low-level programming staff throughout all the application stages
+
+https://en.wikipedia.org/wiki/Template:Application_binary_interface - specific low-level programming staff only about the compilation stage
+
+https://en.wikipedia.org/wiki/Template:X86_assembly_topics - hardware programming staff commonly on the processor level
