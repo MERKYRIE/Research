@@ -104,6 +104,54 @@ Such a process can be illustrated on a step by step basis by the following:
 
 2. Partition calls Ground - the Partition parameters are now pushed on the stack, the Ground parameters are now placed in the registers
 
+3. Partition regains control - the Partition parameters are now popped from the stack
+
+4. Partition calls Entity - the Partition parameters are now pushed on the stack, the Entity parameters are now placed in the registers
+
+5. Partition regains control - the Partition parameters are now popped from the stack
+
+6. Space regains control - the registers are filled with the information defined by ABI itself
+
+Pushing/popping the parameters on/from the stack is a pretty time-consuming operation.
+
+There are 2 pushes and 2 pops.
+
+Each of them is 6 64-bits parameters stack push/pop instructions long.
+
+12 (2 pushes * 6 parameters) parameters from pushes and 12 (2 pops * 6 parameters) parameters from pops.
+
+Totally, 24 (12 pushes + 12 pops) parameters.
+
+24 stack instructions.
+
+Moving the parameters to the registers is a time-consuming operation too.
+
+There is 1 such operation.
+
+It is 6 64-bits parameters register mov instructions long.
+
+6 register instructions.
+
+So it will be 24 stack instructions and 6 register ones in total.
+
+Multiplied by every Partition in entire Space.
+
+Let us say, there are 1000000 (1000 by width * 1000 by height) of them now.
+
+In such a case 24000000 (24 instructions * 1000000 partitions) stack instructions and 6000000 (6 instructions * 1000000 partitions) register ones would totally take place.
+
+It is possible to move all the code from Ground and from Entity to Partition.
+
+Removing all the stack instructions in such a way.
+
+But still preserving all the register ones.
+
+Moreover, degrading the code structure by it.
+
+There is a better solution.
+
+To convert all the parameters to the global variables.
+
 # Analysis
 
 # Bibliography
