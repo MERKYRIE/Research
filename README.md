@@ -154,6 +154,70 @@ To convert all the parameters to the global variables.
 
 # Analysis
 
+## Remove function parameters in calls to tilemap's partitions for performance upgrade
+
+Space evolutioned from Space1.hxx to Space2.hxx by moving the call parameters as its global variables.
+
+It was done to directly pass them as function parameters in calls to tilemap's partitions.
+
+The following code was added to Space2.hxx (lines 39-61):
+
+//Configures viewport's current respective coordinates
+\
+//Move here as global to directly pass as function parameters in calls to tilemap's partitions
+\
+double FX;
+\
+double FY;
+\
+//Configures viewport's current respective scale
+\
+//Move here as global to directly pass as function parameters in calls to tilemap's partitions
+\
+double FScaleX;
+\
+double FScaleY;
+\
+//Configures viewport's last respective scale
+\
+//Move here as global to directly pass as function parameters in calls to tilemap's partitions
+\
+double FScaleLastX;
+\
+double FScaleLastY;
+\
+//Configures tilemap's current respective partition
+\
+//Move here as global to directly pass as function parameters in calls to tilemap's partitions
+\
+std::int64_t FIterationX;
+\
+std::int64_t FIterationY;
+
+Space evolutioned from Space1.cxx to Space2.cxx by replacing the call parameters by its global variables.
+
+It was also done to the loops counters in the iteration to keep them updated.
+
+The following code was modified in Space2.cxx (lines 18-...-21):
+
+for(FIterationX = 0 ; FIterationX < FWidth ; FIterationX++)
+\
+...
+\
+for(FIterationY = 0 ; FIterationY < FHeight ; FIterationY++)
+
+The same code (lines 46-...-48):
+
+for(FIterationX = 0 ; FIterationX < FWidth ; FIterationX++)
+\
+...
+\
+for(FIterationY = 0 ; FIterationY < FHeight ; FIterationY++)
+
+The following code (line 50):
+
+FMatrix[FIterationX][FIterationY]->IUpdate();
+
 # Bibliography
 
 https://link.springer.com/book/10.1007/978-1-4842-5076-1 - Netwide Assembly (NASM) and stand-alone assembly programming with it under Linux x64 and Windows x64
