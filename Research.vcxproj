@@ -56,6 +56,10 @@
     <ClInclude Include="_Input\_\Research\Space5\Entity.hxx" />
     <ClInclude Include="_Input\_\Research\Space5\Ground.hxx" />
     <ClInclude Include="_Input\_\Research\Space5\Image.hxx" />
+    <ClInclude Include="_Input\_\Research\Space6.hxx" />
+    <ClInclude Include="_Input\_\Research\Space6\Entity.hxx" />
+    <ClInclude Include="_Input\_\Research\Space6\Ground.hxx" />
+    <ClInclude Include="_Input\_\Research\Space6\Image.hxx" />
     <ClInclude Include="_Input\_\Research\Time.hxx" />
     <ClInclude Include="_Input\_\Research\Video1.hxx" />
     <ClInclude Include="_Input\_\Research\Video1\Font.hxx" />
@@ -72,6 +76,9 @@
     <ClInclude Include="_Input\_\Research\Video5.hxx" />
     <ClInclude Include="_Input\_\Research\Video5\Font.hxx" />
     <ClInclude Include="_Input\_\Research\Video5\Image.hxx" />
+    <ClInclude Include="_Input\_\Research\Video6.hxx" />
+    <ClInclude Include="_Input\_\Research\Video6\Font.hxx" />
+    <ClInclude Include="_Input\_\Research\Video6\Image.hxx" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Input\_\Research.cxx" />
@@ -87,12 +94,18 @@
     <ClCompile Include="_Input\_\Research\Mouse\Relative.cxx" />
     <ClCompile Include="_Input\_\Research\Mouse\Square.cxx" />
     <ClCompile Include="_Input\_\Research\Mouse\Wheel.cxx" />
-    <ClCompile Include="_Input\_\Research\Space5\Entity.cxx" />
-    <ClCompile Include="_Input\_\Research\Space5\Ground.cxx" />
-    <ClCompile Include="_Input\_\Research\Space5\Image.cxx" />
-    <ClCompile Include="_Input\_\Research\Video5.cxx" />
-    <ClCompile Include="_Input\_\Research\Video5\Font.cxx" />
-    <ClCompile Include="_Input\_\Research\Video5\Image.cxx" />
+    <ClCompile Include="_Input\_\Research\Space6\Entity.cxx" />
+    <ClCompile Include="_Input\_\Research\Space6\Ground.cxx" />
+    <ClCompile Include="_Input\_\Research\Space6\Image.cxx" />
+    <ClCompile Include="_Input\_\Research\Video6.cxx" />
+    <ClCompile Include="_Input\_\Research\Video6\Font.cxx" />
+    <ClCompile Include="_Input\_\Research\Video6\Image.cxx" />
+    <ClInclude Include="_Input\_\Research\Space5\Entity.cxx" />
+    <ClInclude Include="_Input\_\Research\Space5\Ground.cxx" />
+    <ClInclude Include="_Input\_\Research\Space5\Image.cxx" />
+    <ClInclude Include="_Input\_\Research\Video5.cxx" />
+    <ClInclude Include="_Input\_\Research\Video5\Font.cxx" />
+    <ClInclude Include="_Input\_\Research\Video5\Image.cxx" />
     <ClInclude Include="_Input\_\Research\Space3\Entity.cxx" />
     <ClInclude Include="_Input\_\Research\Space3\Ground.cxx" />
     <ClInclude Include="_Input\_\Research\Space3\Image.cxx" />
@@ -105,7 +118,7 @@
     <ClInclude Include="_Input\_\Research\Video3.cxx" />
     <ClInclude Include="_Input\_\Research\Video3\Font.cxx" />
     <ClInclude Include="_Input\_\Research\Video3\Image.cxx" />
-    <ClCompile Include="_Input\_\Research\Space5.cxx" />
+    <ClInclude Include="_Input\_\Research\Space5.cxx" />
     <ClInclude Include="_Input\_\Research\Video4.cxx" />
     <ClInclude Include="_Input\_\Research\Video4\Font.cxx" />
     <ClInclude Include="_Input\_\Research\Video4\Image.cxx" />
@@ -120,6 +133,7 @@
     <ClInclude Include="_Input\_\Research\Space2\Image.cxx" />
     <ClInclude Include="_Input\_\Research\Space2\Partition.cxx" />
     <ClInclude Include="_Input\_\Research\Space3.cxx" />
+    <ClCompile Include="_Input\_\Research\Space6.cxx" />
     <ClCompile Include="_Input\_\Research\Time.cxx" />
     <ClInclude Include="_Input\_\Research\Video1.cxx" />
     <ClInclude Include="_Input\_\Research\Video1\Font.cxx" />

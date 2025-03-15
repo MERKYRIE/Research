@@ -6,8 +6,9 @@ namespace NResearch::NResearch
     //Remove function parameters in calls to tilemap's partitions for performance upgrade
     //Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
     //Separate ground structures and entity ones for performance upgrade
+    //Move ground and entity image here for memory upgrade
 
-    struct SSpace5
+    inline struct SSpace6
     {
         //Configures viewport's mouse dragging speed
 
@@ -62,20 +63,25 @@ namespace NResearch::NResearch
         //Replace std::shared_ptr usages with std::unique_ptr
         //Separate ground structures and entity
 
-        std::vector<std::vector<std::unique_ptr<NSpace5::SGround>>> FGrounds;
+        std::vector<std::vector<std::unique_ptr<NSpace6::SGround>>> FGrounds;
 
         //Contains all partitions as layout
         //Replace std::shared_ptr usages with std::unique_ptr
         //Separate ground structures and entity
 
-        std::unordered_map<std::int64_t , std::unordered_map<std::int64_t , std::unique_ptr<NSpace5::SEntity>>> FEntities;
+        std::unordered_map<std::int64_t , std::unordered_map<std::int64_t , std::unique_ptr<NSpace6::SEntity>>> FEntities;
 
+        //Move ground and entity image
+        
+        std::unique_ptr<NSpace6::SImage> FImage;
+        
         //Configures viewport and all partitions
 
-        SSpace5();
+        SSpace6();
 
         //Updates viewport and all partitions
 
         void IUpdate();
-    };
+    }
+    GSpace;
 }
