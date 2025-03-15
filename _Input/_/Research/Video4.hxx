@@ -4,7 +4,7 @@ namespace NResearch::NResearch
 {
     //Naive video implementation
 
-    struct SVideo3
+    inline struct SVideo4
     {
         //Contains SDL-based functionalities for drawing
         
@@ -28,11 +28,11 @@ namespace NResearch::NResearch
 
         //Contains all the fonts loaded
 
-        std::unordered_map<std::string , std::shared_ptr<NVideo3::SFont>> FFonts;
+        std::unordered_map<std::string , std::shared_ptr<NVideo4::SFont>> FFonts;
 
         //Configures window, renderer and fonts
 
-        SVideo3();
+        SVideo4();
 
         //Clear and updates the window
 
@@ -40,7 +40,7 @@ namespace NResearch::NResearch
 
         //Returns a font by name
 
-        NVideo3::SFont* IFont(std::string const& APath);
+        NVideo4::SFont* IFont(std::string const& APath);
 
         //Converts different kinds of coordinates
 
@@ -57,6 +57,7 @@ namespace NResearch::NResearch
 
         //Terminates SDL-based functionalities for drawing 
 
-        ~SVideo3();
-    };
+        ~SVideo4();
+    }
+    GVideo;
 }
