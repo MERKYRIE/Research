@@ -113,6 +113,54 @@
     <ClInclude Include="_Input\_\Research\Video1.cxx">
       <Filter>Research</Filter>
     </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space3.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video3.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space3\Entity.hxx">
+      <Filter>Research\Space3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space3\Ground.hxx">
+      <Filter>Research\Space3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space3\Image.hxx">
+      <Filter>Research\Space3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space3\Partition.hxx">
+      <Filter>Research\Space3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video3\Font.hxx">
+      <Filter>Research\Video3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video3\Image.hxx">
+      <Filter>Research\Video3</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space2\Entity.cxx">
+      <Filter>Research\Space2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space2\Ground.cxx">
+      <Filter>Research\Space2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space2\Image.cxx">
+      <Filter>Research\Space2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space2\Partition.cxx">
+      <Filter>Research\Space2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video2\Font.cxx">
+      <Filter>Research\Video2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video2\Image.cxx">
+      <Filter>Research\Video2</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space2.cxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video2.cxx">
+      <Filter>Research</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Input\_\Research.cxx" />
@@ -155,29 +203,29 @@
     <ClCompile Include="_Input\_\Research\Keyboard\Key.cxx">
       <Filter>Research\Keyboard</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space2\Entity.cxx">
-      <Filter>Research\Space2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space2\Ground.cxx">
-      <Filter>Research\Space2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space2\Image.cxx">
-      <Filter>Research\Space2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space2\Partition.cxx">
-      <Filter>Research\Space2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video2\Font.cxx">
-      <Filter>Research\Video2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video2\Image.cxx">
-      <Filter>Research\Video2</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video2.cxx">
+    <ClCompile Include="_Input\_\Research\Space3.cxx">
       <Filter>Research</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space2.cxx">
+    <ClCompile Include="_Input\_\Research\Video3.cxx">
       <Filter>Research</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space3\Entity.cxx">
+      <Filter>Research\Space3</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space3\Ground.cxx">
+      <Filter>Research\Space3</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space3\Image.cxx">
+      <Filter>Research\Space3</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Space3\Partition.cxx">
+      <Filter>Research\Space3</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Video3\Font.cxx">
+      <Filter>Research\Video3</Filter>
+    </ClCompile>
+    <ClCompile Include="_Input\_\Research\Video3\Image.cxx">
+      <Filter>Research\Video3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +249,12 @@
     </Filter>
     <Filter Include="Research\Space2">
       <UniqueIdentifier>{7f58a9cc-943e-4328-bb99-d97b9127066c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Space3">
+      <UniqueIdentifier>{2619f793-4b61-47f1-b746-593360df2a85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Video3">
+      <UniqueIdentifier>{e4a95eb9-dae1-4eba-9171-6a49345c0ae8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

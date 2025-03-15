@@ -4,8 +4,9 @@ namespace NResearch::NResearch
 {
     //Optimized tilemap implementation
     //Remove function parameters in calls to tilemap's partitions for performance upgrade
+    //Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
 
-    struct SSpace2
+    inline struct SSpace3
     {
         //Configures viewport's mouse dragging speed
 
@@ -33,8 +34,9 @@ namespace NResearch::NResearch
         std::int64_t FHeight;
 
         //Contains all partitions as layout
+        //Replace std::shared_ptr usages with std::unique_ptr
 
-        std::vector<std::vector<std::shared_ptr<NSpace2::SPartition>>> FMatrix;
+        std::vector<std::vector<std::unique_ptr<NSpace3::SPartition>>> FMatrix;
 
         //Configures viewport's current respective coordinates
         //Move here as global to directly pass as function parameters in calls to tilemap's partitions
@@ -62,10 +64,11 @@ namespace NResearch::NResearch
 
         //Configures viewport and all partitions
 
-        SSpace2();
+        SSpace3();
 
         //Updates viewport and all partitions
 
         void IUpdate();
-    };
+    }
+    GSpace;
 }
