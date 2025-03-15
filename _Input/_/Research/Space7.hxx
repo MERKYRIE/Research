@@ -7,8 +7,9 @@ namespace NResearch::NResearch
     //Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
     //Separate ground structures and entity ones for performance upgrade
     //Move ground and entity image here for memory upgrade
+    //Move ground and entity image loading for permormance upgrade
 
-    struct SSpace6
+    inline struct SSpace7
     {
         //Configures viewport's mouse dragging speed
 
@@ -63,24 +64,25 @@ namespace NResearch::NResearch
         //Replace std::shared_ptr usages with std::unique_ptr
         //Separate ground structures and entity
 
-        std::vector<std::vector<std::unique_ptr<NSpace6::SGround>>> FGrounds;
+        std::vector<std::vector<std::unique_ptr<NSpace7::SGround>>> FGrounds;
 
         //Contains all partitions as layout
         //Replace std::shared_ptr usages with std::unique_ptr
         //Separate ground structures and entity
 
-        std::unordered_map<std::int64_t , std::unordered_map<std::int64_t , std::unique_ptr<NSpace6::SEntity>>> FEntities;
+        std::unordered_map<std::int64_t , std::unordered_map<std::int64_t , std::unique_ptr<NSpace7::SEntity>>> FEntities;
 
         //Move ground and entity image
         
-        std::unique_ptr<NSpace6::SImage> FImage;
+        std::unique_ptr<NSpace7::SImage> FImage;
         
         //Configures viewport and all partitions
 
-        SSpace6();
+        SSpace7();
 
         //Updates viewport and all partitions
 
         void IUpdate();
-    };
+    }
+    GSpace;
 }

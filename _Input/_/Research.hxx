@@ -96,6 +96,13 @@ namespace NResearch
             struct SImage;
         }
 
+        namespace NSpace7
+        {
+            struct SEntity;
+            struct SGround;
+            struct SImage;
+        }
+
         namespace NVideo1
         {
             struct SFont;
@@ -127,6 +134,12 @@ namespace NResearch
         }
 
         namespace NVideo6
+        {
+            struct SFont;
+            struct SImage;
+        }
+
+        namespace NVideo7
         {
             struct SFont;
             struct SImage;
@@ -165,6 +178,9 @@ namespace NResearch
 #include"Research/Space6/Entity.hxx"
 #include"Research/Space6/Ground.hxx"
 #include"Research/Space6/Image.hxx"
+#include"Research/Space7/Entity.hxx"
+#include"Research/Space7/Ground.hxx"
+#include"Research/Space7/Image.hxx"
 #include"Research/Video1/Font.hxx"
 #include"Research/Video1/Image.hxx"
 #include"Research/Video2/Font.hxx"
@@ -177,6 +193,8 @@ namespace NResearch
 #include"Research/Video5/Image.hxx"
 #include"Research/Video6/Font.hxx"
 #include"Research/Video6/Image.hxx"
+#include"Research/Video7/Font.hxx"
+#include"Research/Video7/Image.hxx"
 
 #include"Research/Debug.hxx"
 #include"Research/Keyboard.hxx"
@@ -188,9 +206,11 @@ namespace NResearch
 #include"Research/Video4.hxx"
 #include"Research/Video5.hxx"
 #include"Research/Video6.hxx"
+#include"Research/Video7.hxx"
 #include"Research/Space1.hxx"
 #include"Research/Space2.hxx"
 #include"Research/Space3.hxx"
 #include"Research/Space4.hxx"
 #include"Research/Space5.hxx"
 #include"Research/Space6.hxx"
+#include"Research/Space7.hxx"
