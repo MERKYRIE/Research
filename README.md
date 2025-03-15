@@ -152,6 +152,16 @@ There is a better solution.
 
 To convert all the parameters to the global variables.
 
+## Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
+
+## Remove checking of ground pointer validity for performance upgrade
+
+## Separate ground structures and entity ones for performance upgrade
+
+## Move ground and entity image here for memory upgrade
+
+## Move ground and entity image loading for permormance upgrade
+
 # Analysis
 
 ## Remove function parameters in calls to tilemap's partitions for performance upgrade
@@ -217,6 +227,16 @@ for(FIterationY = 0 ; FIterationY < FHeight ; FIterationY++)
 The following code (line 50):
 
 FMatrix[FIterationX][FIterationY]->IUpdate();
+
+## Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
+
+## Remove checking of ground pointer validity for performance upgrade
+
+## Separate ground structures and entity ones for performance upgrade
+
+## Move ground and entity image here for memory upgrade
+
+## Move ground and entity image loading for permormance upgrade
 
 # Bibliography
 
