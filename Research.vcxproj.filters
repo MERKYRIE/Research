@@ -209,6 +209,51 @@
     <ClInclude Include="_Input\_\Research\Video3.cxx">
       <Filter>Research</Filter>
     </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space5.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video5.hxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video5\Font.hxx">
+      <Filter>Research\Video5</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video5\Image.hxx">
+      <Filter>Research\Video5</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space5\Entity.hxx">
+      <Filter>Research\Space5</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space5\Ground.hxx">
+      <Filter>Research\Space5</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space5\Image.hxx">
+      <Filter>Research\Space5</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video4\Font.cxx">
+      <Filter>Research\Video4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video4\Image.cxx">
+      <Filter>Research\Video4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space4\Entity.cxx">
+      <Filter>Research\Space4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space4\Ground.cxx">
+      <Filter>Research\Space4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space4\Image.cxx">
+      <Filter>Research\Space4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space4\Partition.cxx">
+      <Filter>Research\Space4</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Space4.cxx">
+      <Filter>Research</Filter>
+    </ClInclude>
+    <ClInclude Include="_Input\_\Research\Video4.cxx">
+      <Filter>Research</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Input\_\Research.cxx" />
@@ -251,29 +296,26 @@
     <ClCompile Include="_Input\_\Research\Keyboard\Key.cxx">
       <Filter>Research\Keyboard</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space4.cxx">
+    <ClCompile Include="_Input\_\Research\Space5.cxx">
       <Filter>Research</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video4.cxx">
+    <ClCompile Include="_Input\_\Research\Video5.cxx">
       <Filter>Research</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space4\Entity.cxx">
-      <Filter>Research\Space4</Filter>
+    <ClCompile Include="_Input\_\Research\Video5\Font.cxx">
+      <Filter>Research\Video5</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space4\Ground.cxx">
-      <Filter>Research\Space4</Filter>
+    <ClCompile Include="_Input\_\Research\Video5\Image.cxx">
+      <Filter>Research\Video5</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space4\Partition.cxx">
-      <Filter>Research\Space4</Filter>
+    <ClCompile Include="_Input\_\Research\Space5\Entity.cxx">
+      <Filter>Research\Space5</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video4\Font.cxx">
-      <Filter>Research\Video4</Filter>
+    <ClCompile Include="_Input\_\Research\Space5\Ground.cxx">
+      <Filter>Research\Space5</Filter>
     </ClCompile>
-    <ClCompile Include="_Input\_\Research\Space4\Image.cxx">
-      <Filter>Research\Space4</Filter>
-    </ClCompile>
-    <ClCompile Include="_Input\_\Research\Video4\Image.cxx">
-      <Filter>Research\Video4</Filter>
+    <ClCompile Include="_Input\_\Research\Space5\Image.cxx">
+      <Filter>Research\Space5</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -309,6 +351,12 @@
     </Filter>
     <Filter Include="Research\Video4">
       <UniqueIdentifier>{5698a1f3-1d4d-4a23-991d-923a3a3ae019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Video5">
+      <UniqueIdentifier>{67d4492c-f362-486f-aa99-960dadae4101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Research\Space5">
+      <UniqueIdentifier>{a9f59f7f-dd96-419b-8089-629e90969a77}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
