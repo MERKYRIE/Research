@@ -154,6 +154,18 @@ To convert all the parameters to the global variables.
 
 ## Replace std::shared_ptr usages with std::unique_ptr ones for memory upgrade
 
+std::shared_ptr uses 8 bytes for an instance handle and 8 bytes for a reference one.
+
+The instance handle points to the data and the counter one points to the counter.
+
+The counter itself uses 8 bytes too, but it exists on the per instance basis.
+
+16 (+8 on the per instance basis) bytes totally.
+
+std::unique_ptr only uses 8 bytes for an instance handle.
+
+So it's 2x (3x on the per instance basis) as effective as the shared one.
+
 ## Remove checking of ground pointer validity for performance upgrade
 
 ## Separate ground structures and entity ones for performance upgrade
