@@ -1,3 +1,17 @@
+# How to run the project
+
+To test a specific version You just need to:
+
+1. Choose a commit You prefer
+
+2. Download as ZIP
+
+3. Extract
+
+4. Open via Research.sln
+
+5. Run
+
 # Introduction
 
 Many games have been using a tilemap or its derivatives (octree as a three-dimensional approach).
